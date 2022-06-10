@@ -1,33 +1,37 @@
 /**
-* To jest program do rozpoznawania trójkąta.
-*/
+ * To jest program do rozpoznawania trójkąta.
+ */
 
 class Trojkaty {
     /**
-     * Główna funkcja programu.
+     * Główna funkcja programu.S
+     *
      * @param {float} a - Długość pierwszego boku.
      * @param {float} b - Długość drugiego boku.
      * @param {float} c - Długość trzeciego boku.
      */
-    public static void jakiTrojkat(float a, float b, float c){
-
-         if (a == b && b == c) {
-             System.out.println("Trójkąt równoboczny"); 
-         }
-
+    public static void jakiTrojkat(float a, float b, float c) {
+        if (a == b && b == c) {
+            System.out.println("Trójkąt równoboczny");
+        }
         if (a == b || b == c || a == c) {
             System.out.println("Trójkąt równoramienny");
         }
- 
-         // TODO: tutaj trzeba bedzie dopisac inne przypadki
+        // TODO: tutaj trzeba bedzie dopisac inne przypadki
     }
-    /** Wyświetla ekran pomocy */
-    public static void pomoc(){
+
+    /**
+     * Wyświetla ekran pomocy
+     */
+    public static void pomoc() {
         System.out.println("Acme INC. (C) 2022");
         System.out.println("Program do rozpoznawania rodzaju trójkąta");
         System.out.println("Uruchom z trzema argumentami liczbowymi - długość boków trójkąta");
     }
-    /** Glowna funkcja */
+
+    /**
+     * Główna funkcja
+     */
     public static void main(String... args) {
         if (args.length != 3) {
             pomoc();
