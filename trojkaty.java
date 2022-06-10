@@ -30,7 +30,7 @@ class Trojkaty {
     }
 
     /**
-     * Glowna funkcja
+     * Główna funkcja
      */
     public static void main(String... args) {
         if (args.length != 3) {
