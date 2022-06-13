@@ -10,6 +10,7 @@ class Trojkaty {
      * @param {float} b - Długość drugiego boku.
      * @param {float} c - Długość trzeciego boku.
      */
+
     public static boolean czyProstokatny(float a, float b, float c){
         if (a * a + b * b == c*c) return true;
         if (b * b + c * c == a*a) return true;
